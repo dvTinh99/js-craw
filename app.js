@@ -5,7 +5,7 @@ const { v4: uuidv4 } = require('uuid')
 
 const crawlAll = async () => {
     const crawl = new Leech()
-    await crawl.init('https://npcshop.vn/')
+    await crawl.init('https://kccshop.vn/')
 
     const menu = crawl.getAttr('.box-menu-main .menu-content a.itop', 'href').array()
 
